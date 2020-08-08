@@ -1,9 +1,7 @@
-const { TestScheduler } = require("jest");
+
+const sum = require('./sum')
 
 
-
-
-
-test('Describe your test', () => {
-    
+it('Sum should be a function', () => {
+    expect(sum).toBeInstanceOf(Function)
 })
