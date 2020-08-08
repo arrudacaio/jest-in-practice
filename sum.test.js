@@ -1,7 +1,9 @@
 
-const sum = require('./sum')
+
+import  {expect} from 'chai'
+import  sum from'./sum'
 
 
 it('Sum should be a function', () => {
-    expect(sum).toBeInstanceOf(Function)
+    expect(sum).to.be.a('function')
 })
